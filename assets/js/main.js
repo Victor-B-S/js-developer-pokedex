@@ -1,8 +1,11 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
+const listFirstGen = document.getElementById('firstGen')
+const listSecondGen = document.getElementById('secondGen')
+const listThirdGen = document.getElementById('thirdGen')
 
-const maxRecords = 151
-const limit = 10
+let maxRecords = 386;
+const limit = 10;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -34,9 +37,9 @@ loadPokemonItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit
-    const qtdRecordsWithNexPage = offset + limit
+    const qtdRecordsWithNextPage = offset + limit
 
-    if (qtdRecordsWithNexPage >= maxRecords) {
+    if (qtdRecordsWithNextPage >= maxRecords) {
         const newLimit = maxRecords - offset
         loadPokemonItens(offset, newLimit)
 
@@ -44,4 +47,25 @@ loadMoreButton.addEventListener('click', () => {
     } else {
         loadPokemonItens(offset, limit)
     }
+})
+
+listFirstGen.addEventListener('click', () => {
+    offset = 0
+    maxRecords = 151
+    pokemonList.innerHTML = ""
+    loadPokemonItens(offset, limit)
+})
+
+listSecondGen.addEventListener('click', () => {
+    offset = 151
+    maxRecords = 251
+    pokemonList.innerHTML = ""
+    loadPokemonItens(offset, limit)
+})
+
+listThirdGen.addEventListener('click', () => {
+    offset = 251
+    maxRecords = 386
+    pokemonList.innerHTML = ""
+    loadPokemonItens(offset, limit)
 })

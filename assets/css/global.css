@@ -5,12 +5,13 @@
 
 body {
     background-color: #f6f8fc;
+    /*background-image: url("https://wallpaperaccess.com/full/24959.jpg");*/
 }
 
 .content {
     width: 100vw;
     height: 100vh;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #fff;
 }
 
