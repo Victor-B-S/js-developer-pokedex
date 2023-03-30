@@ -1,5 +1,10 @@
 # Trilha JS Developer - Pokedex
 
-## Adicionando botões para mostrar as três primeiras gerações (que são minhas favoritas)
+## Mudança técnica:
+- Adicionados botões para mostrar Pokemons da primeira segunda e terceira geração (que são meus favoritos)
 
-![image](https://user-images.githubusercontent.com/14918499/228706379-45ccbb13-f6a5-4ed2-8854-b88f46e29cf9.png)
+## Mudanças visuais:
+- Adicionada uma logo de Pokemon;
+- Background vermelho como filler em telas grandes baseado na cor do pokedex;
+
+![image](https://user-images.githubusercontent.com/14918499/228709841-afb5786d-a22a-4bde-932d-91d70c86464e.png)
